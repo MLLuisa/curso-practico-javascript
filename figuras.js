@@ -4,10 +4,10 @@ console.group("Cuadrados");
 // const ladoCuadrado = 5;
 // console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
 
-function permimetroCuadrado(lado) {
+function perimetroCuadrado(lado) {
     return lado * 4;
 } 
-permimetroCuadrado()
+perimetroCuadrado()
 // console.log("El perimetro del cuardado es: " + permimetroCuadrado + "cm");
 
 function areaCuadrado(lado) {
@@ -75,3 +75,21 @@ function areaCirculo(radio) {
 
 
 console.groupEnd();
+
+// Aqui interactuamos con el HTML
+
+function calcularPerimetroCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const perimetro = perimetroCuadrado(value);
+    alert(perimetro);
+}
+
+function calcularAreaCuadrado() {
+    const input = document.getElementById("InputCuadrado");
+    const value = input.value;
+
+    const area = areaCuadrado(value);
+    alert(area);
+}
